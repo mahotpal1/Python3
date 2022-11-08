@@ -22,3 +22,7 @@ except Exception as e :
   print(e)
   lg.error("Error creating table")
   print("Error in creating establishment")
+
+
+#cur1.execute("select * from table1")
+#cur1.fetchall() - > this will return all values in form of list of tuples.
