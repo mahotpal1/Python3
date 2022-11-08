@@ -8,7 +8,9 @@ try :
 
   cursor = mydb.cursor() #create a cursor to execute queries
   cursor.execute(query)
-  print(cursor.fetchall())
+  res = cursor.fetchall()
+  for i in res:
+    print(i)
 
 except Exception as e:
   mydb.close()
